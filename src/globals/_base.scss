@@ -6,6 +6,24 @@ $neutral-clr-400: hsl(225, 100%, 98%);
 $neutral-clr-500: hsl(224, 23%, 55%);
 $neutral-crl-700: hsl(223, 47%, 23%);
 
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: $primary-clr-400;
+  background-image: url("../assets/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media screen and (max-width: 50em) {
+    background-image: url("../assets/images/pattern-background-mobile.svg");
+  }
+}
+
+main {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
 //UTILITIES
 //--fonts
 .fs-xxs {

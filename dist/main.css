@@ -120,7 +120,7 @@ main {
 
 .card {
   margin: 1.5rem;
-  background-color: hsl(225deg, 100%, 98%);
+  background-color: hsl(0deg, 0%, 100%);
   overflow: hidden;
   box-shadow: 0 2.25rem 2.5rem -1.5rem hsla(245deg, 75%, 52%, 0.2);
 }

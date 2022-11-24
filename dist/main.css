@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.fs-xxs {
+  font-size: clamp(0.8125rem, 0.9vw, 0.875rem);
+}
+
+.fs-xs {
+  font-size: 0.9375rem;
+}
+
+.fs-s {
+  font-size: 1rem;
+}
+
+.fs-m {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.flex {
+  display: flex;
+}
+
+.br--s {
+  border-radius: 0.75rem;
+}
+
+.br--m {
+  border-radius: 1.25rem;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225deg, 100%, 94%);
+  background-image: url("../assets/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media screen and (max-width: 50em) {
+  body {
+    background-image: url("../assets/images/pattern-background-mobile.svg");
+  }
+}
+
+main {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 1.5rem;
+  background-color: hsl(225deg, 100%, 98%);
+  overflow: hidden;
+  box-shadow: 0 2.25rem 2.5rem -1.5rem hsla(245deg, 75%, 52%, 0.2);
+}
+.card__ctnr {
+  padding: clamp(1.75rem, 3vw, 3rem);
+  text-align: center;
+}
+.card__ctnr__title {
+  padding-bottom: 1rem;
+  color: hsl(223deg, 47%, 23%);
+}
+.card__ctnr__title + p {
+  max-width: 32ch;
+  color: hsl(224deg, 23%, 55%);
+  line-height: 1.6;
+}
+.card__ctnr__plan {
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: clamp(1rem, 1.75vw, 1.5rem);
+  padding-block: clamp(1.25rem, 1.75vw, 1.5rem);
+  background-color: hsla(225deg, 100%, 94%, 0.3);
+  margin-block: 1.25rem;
+  transition: transform ease-out 200ms;
+}
+.card__ctnr__plan :first-child {
+  gap: clamp(1.25rem, 1.5vw, 1.5rem);
+}
+.card__ctnr__plan__description :first-child {
+  color: hsl(223deg, 47%, 23%);
+}
+.card__ctnr__plan__description :nth-child(2) {
+  color: hsl(224deg, 23%, 55%);
+}
+@media screen and (max-width: 45em) {
+  .card__ctnr__plan__description > * {
+    font-size: 0.875rem;
+  }
+}
+.card__ctnr__plan a {
+  color: hsl(245deg, 75%, 52%);
+  transition: ease 200ms;
+}
+.card__ctnr__plan a:hover {
+  color: hsla(245deg, 75%, 52%, 0.7);
+}
+.card__ctnr__plan:hover {
+  transform: scale(1.05);
+}
+.card__ctnr__cta {
+  color: hsl(225deg, 100%, 98%);
+  text-decoration: none;
+  display: block;
+  margin-block: 2rem;
+  background-color: hsl(245deg, 75%, 52%);
+  padding-block: 1em;
+  box-shadow: 0 1rem 1rem hsla(245deg, 75%, 52%, 0.2);
+  transition: ease 200ms;
+}
+.card__ctnr__cta:hover {
+  background-color: hsla(245deg, 75%, 52%, 0.7);
+}
+.card__ctnr__cancel {
+  color: hsl(224deg, 23%, 55%);
+  text-decoration: none;
+  transition: ease 200ms;
+}
+.card__ctnr__cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+}/*# sourceMappingURL=main.css.map */

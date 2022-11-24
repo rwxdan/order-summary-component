@@ -1,0 +1,50 @@
+// colors
+$primary-clr-400: hsl(225, 100%, 94%);
+$primary-clr-500: hsl(245, 75%, 52%, 0.7);
+$primary-clr-600: hsl(245, 75%, 52%);
+$neutral-clr-400: hsl(225, 100%, 98%);
+$neutral-clr-500: hsl(224, 23%, 55%);
+$neutral-crl-700: hsl(223, 47%, 23%);
+
+//UTILITIES
+//--fonts
+.fs-xxs {
+  font-size: clamp(0.8125rem, 0.9vw, 0.875rem);
+}
+
+.fs-xs {
+  font-size: 0.9375rem;
+}
+
+.fs-s {
+  font-size: 1rem;
+}
+
+.fs-m {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+//layout
+.flex {
+  display: flex;
+}
+
+.br--s {
+  border-radius: 0.75rem;
+}
+
+.br--m {
+  border-radius: 1.25rem;
+}

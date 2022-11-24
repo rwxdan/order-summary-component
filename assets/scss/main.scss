@@ -1,0 +1,108 @@
+@import "reset";
+@import "base";
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: $primary-clr-400;
+  background-image: url("../assets/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media screen and (max-width: 50em) {
+    background-image: url("../assets/images/pattern-background-mobile.svg");
+  }
+}
+
+main {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 1.5rem;
+  background-color: $neutral-clr-400;
+  overflow: hidden;
+  box-shadow: 0 2.25rem 2.5rem -1.5rem hsl(245, 75%, 52%, 0.2);
+
+  &__ctnr {
+    padding: clamp(1.75rem, 3vw, 3rem);
+    text-align: center;
+
+    &__title {
+      padding-bottom: 1rem;
+      color: $neutral-crl-700;
+
+      + p {
+        max-width: 32ch;
+        color: $neutral-clr-500;
+        line-height: 1.6;
+      }
+    }
+
+    &__plan {
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: clamp(1rem, 1.75vw, 1.5rem);
+      padding-block: clamp(1.25rem, 1.75vw, 1.5rem);
+      background-color: hsl(225, 100%, 94%, 0.3);
+      margin-block: 1.25rem;
+      transition: transform ease-out 200ms;
+
+      :first-child {
+        gap: clamp(1.25rem, 1.5vw, 1.5rem);
+      }
+
+      &__description {
+        :first-child {
+          color: $neutral-crl-700;
+        }
+        :nth-child(2) {
+          color: $neutral-clr-500;
+        }
+        > * {
+          @media screen and (max-width: 45em) {
+            font-size: 0.875rem;
+          }
+        }
+      }
+      a {
+        color: $primary-clr-600;
+        transition: ease 200ms;
+
+        &:hover {
+          color: $primary-clr-500;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    &__cta {
+      color: $neutral-clr-400;
+      text-decoration: none;
+      display: block;
+      margin-block: 2rem;
+      background-color: $primary-clr-600;
+      padding-block: 1em;
+      box-shadow: 0 1rem 1rem hsl(245, 75%, 52%, 0.2);
+      transition: ease 200ms;
+
+      &:hover {
+        background-color: $primary-clr-500;
+      }
+    }
+
+    &__cancel {
+      color: $neutral-clr-500;
+      text-decoration: none;
+      transition: ease 200ms;
+
+      &:hover {
+        color: $neutral-crl-700;
+      }
+    }
+  }
+}

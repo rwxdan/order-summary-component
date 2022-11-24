@@ -52,7 +52,7 @@
         transition: ease 200ms;
 
         &:hover,
-        &:focus {
+        &:active {
           color: $primary-clr-500;
         }
       }
@@ -69,11 +69,14 @@
       margin-block: 2rem;
       background-color: $primary-clr-600;
       padding-block: 1em;
+      border: 0;
+      min-width: 100%;
+      cursor: pointer;
       box-shadow: 0 1rem 1rem hsl(245, 75%, 52%, 0.2);
       transition: ease 200ms;
 
       &:hover,
-      &:focus {
+      &:active {
         background-color: $primary-clr-500;
       }
     }
@@ -84,7 +87,7 @@
       transition: ease 200ms;
 
       &:hover,
-      &:focus {
+      &:active {
         color: $neutral-crl-700;
       }
     }

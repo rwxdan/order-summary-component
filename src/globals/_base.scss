@@ -11,7 +11,7 @@ body {
   background-color: $primary-clr-400;
   background-image: url("../assets/images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 50vmin;
 
   @media screen and (max-width: 50em) {
     background-image: url("../assets/images/pattern-background-mobile.svg");

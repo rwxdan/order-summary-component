@@ -142,7 +142,7 @@ main {
   align-items: center;
   padding-inline: clamp(1rem, 1.75vw, 1.5rem);
   padding-block: clamp(1.25rem, 1.75vw, 1.5rem);
-  background-color: hsla(225deg, 100%, 94%, 0.3);
+  background-color: hsl(225deg, 100%, 98%);
   margin-block: 1.25rem;
   transition: transform ease-out 200ms;
 }
